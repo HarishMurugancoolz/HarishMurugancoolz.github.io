@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for HTML5 for Windows version 5.7.28">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Weather AQI
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+  	<div class="jumbotron text-center bg-info text-white">
+      <h1>
+        <strong>AQI INDEX</strong>
+      </h1>
+    </div>
+    <br> 
+    <br>
+    <br>
+    	<div class="text-center">
+    		<button  class="btn btn-primary" data-toggle="modal" data-target="#myModal"  id="AQIbtn" onclick="loadDoc()">Get AQI</button>
+    	</div>
+    
+    <br>
+    <br>
+    <br>
+    <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title text-center">AQI</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body jumbotron text-center ">
+          <p id="AQIValue" class="bg-dark text-white"></p>
+          <p id="AQILevel" class="bg-warning text-white"></p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
